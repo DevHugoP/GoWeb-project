@@ -1,6 +1,6 @@
 .header {
   background-color: #564aff;
-  width: 35%;
+  width: 25%;
   height: 60rem;
 }
 .header__nav {
@@ -77,20 +77,24 @@
 }
 .table__head {
   background-color: #564aff;
-}
-.table th {
-  border-radius: 3px;
-  padding: 1.2rem;
   color: white;
   text-align: left;
 }
-.table tbody tr {
-  margin-bottom: 10px;
+.table th,
+.table td {
+  padding: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
 }
-.table tbody th,
-.table tbody td {
-  padding: 1.2rem;
-  border-bottom: 5px solid #f8f9fd;
+
+table th:first-child {
+  border-radius: 3px 0 0 3px;
+  padding-right: 10rem;
+}
+
+table th:last-child {
+  border-radius: 0 3px 3px 0;
+  text-align: end;
 }
 
 html,
