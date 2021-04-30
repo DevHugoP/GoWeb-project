@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="homepageContainer">
+			<header class="header">
+				<nav class="header__nav">
+					<div class="logoBox">
+						<logo class="logoBox__logo"></logo>
+						<h1 class="logoBox__siteName">Circle<br />Products</h1>
+					</div>
+					<div class="navList">
+							<h6 class="navList__title">Dashboard</h6>
+							<p class="navList__text"><span class="navList__dot"></span>Products management</p>
+							<p class="navList__text">Employees management</p>
+							<hr class="navList__line"></hr>
+                            <h6 class="navList__title">Logout</h6>
+					</div>
+				</nav>
+			</header>
+			<section class="mainContent">
+				<h1 class="mainContent__title">Products management</h1>
+                <table id='tableContainer' class="table">
+                    <thead class="table__head">
+                           <tr>
+                            <th>Product name</th>
+                            <th>Category</th> 
+                            <th>Price</th>
+                            <th>Price (including VAT) </th>
+                          </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>markotto@email.com</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>jacobthornton@email.com</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>larrybird@email.com</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>John</td>
+                          <td>Doe</td>
+                          <td>johndoe@email.com</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Gary</td>
+                          <td>Bird</td>
+                          <td>garybird@email.com</td>
+                        </tr>
+                      </tbody>
+ 
+
+                </table>
+			</section>
+		</div>
+        <script src="../javascript/home.js"></script>
+	</body>
+</html>

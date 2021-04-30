@@ -1,0 +1,57 @@
+.header {
+	background-color: $primaryColor;
+	width: 35%;
+	height: 60rem; // à modif
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 2.5rem;
+	}
+}
+
+.logoBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__logo {
+		border: 0.5rem solid white;
+		border-radius: 100px;
+		height: 2.1rem;
+		width: 2.1rem;
+		margin-right: 15px;
+	}
+	&__siteName {
+		color: white;
+		font-weight: 450;
+	}
+}
+
+.navList {
+	margin-top: 4rem;
+	&__title {
+		color: white;
+		font-size: 1.1rem;
+		font-weight: 500;
+		margin-bottom: 2rem;
+	}
+	&__text {
+		color: white;
+		font-weight: 500;
+		margin-top: 2rem;
+	}
+	&__line {
+		border-top: 1px transparent white;
+		width: 95%;
+		margin-top: 2.5rem;
+		margin-left: 0;
+	}
+	&__dot {
+		height: 0.6rem;
+		width: 0.6rem;
+		background-color: white;
+		border-radius: 100%;
+		display: inline-block;
+		margin-right: 15px;
+	}
+}

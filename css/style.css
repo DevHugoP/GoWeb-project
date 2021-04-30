@@ -1,0 +1,103 @@
+.header {
+  background-color: #564aff;
+  width: 35%;
+  height: 60rem;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2.5rem;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoBox__logo {
+  border: 0.5rem solid white;
+  border-radius: 100px;
+  height: 2.1rem;
+  width: 2.1rem;
+  margin-right: 15px;
+}
+.logoBox__siteName {
+  color: white;
+  font-weight: 450;
+}
+
+.navList {
+  margin-top: 4rem;
+}
+.navList__title {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.navList__text {
+  color: white;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+.navList__line {
+  border-top: 1px transparent white;
+  width: 95%;
+  margin-top: 2.5rem;
+  margin-left: 0;
+}
+.navList__dot {
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.homepageContainer {
+  display: flex;
+}
+
+.mainContent {
+  width: 100%;
+  padding: 3rem;
+}
+.mainContent__title {
+  text-align: center;
+  color: #564aff;
+  font-size: 2.1rem;
+  font-weight: 550;
+  margin-bottom: 4rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table__head {
+  background-color: #564aff;
+}
+.table th {
+  border-radius: 3px;
+  padding: 1.2rem;
+  color: white;
+  text-align: left;
+}
+.table tbody tr {
+  margin-bottom: 10px;
+}
+.table tbody th,
+.table tbody td {
+  padding: 1.2rem;
+  border-bottom: 5px solid #f8f9fd;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
