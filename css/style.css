@@ -1,6 +1,6 @@
 .header {
   background-color: #564aff;
-  width: 25%;
+  width: 20%;
   height: 60rem;
 }
 .header__nav {
@@ -95,6 +95,65 @@ table th:first-child {
 table th:last-child {
   border-radius: 0 3px 3px 0;
   text-align: end;
+}
+
+h5 {
+  color: #564aff;
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.productPageTop {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  padding: 1.6rem;
+  justify-content: space-around;
+}
+.productPageTop__arrow {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: gray;
+  margin-right: 15rem;
+}
+.productPageTop__title {
+  text-align: center;
+  color: #564aff;
+  font-size: 1.7rem;
+}
+
+.containerBot {
+  display: flex;
+}
+
+.imgContainer {
+  padding: 3rem;
+}
+.imgContainer__imgBox {
+  display: flex;
+  box-shadow: 0 0 16px #7473732e;
+  max-width: 22rem;
+  max-height: 19rem;
+  padding: 6rem;
+  justify-content: center;
+}
+.imgContainer__productImg {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.sideContent {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.sideContent__textBox {
+  display: flex;
+  font-size: 2rem;
+  color: #564aff;
+}
+.sideContent__priceText {
+  margin: 0;
 }
 
 html,

@@ -11,5 +11,10 @@ const homepageData = (fetchedData) => {
 		const tableContainer = document.getElementById("tablecontainer");
 
 		//Création des éléments du DOM nécessaires
+		const blocArticle = document.createElement("tr");
+		const blocCamera = document.createElement("td");
+		const imageBoite = document.createElement("td");
+		const titreCamera = document.createElement("td");
+		const prixCamera = document.createElement("td");
 	}
 };

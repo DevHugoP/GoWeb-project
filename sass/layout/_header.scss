@@ -1,6 +1,6 @@
 .header {
 	background-color: $primaryColor;
-	width: 25%;
+	width: 20%;
 	height: 60rem; // à modif
 
 	&__nav {
@@ -29,6 +29,7 @@
 
 .navList {
 	margin-top: 4rem;
+
 	&__title {
 		color: white;
 		font-size: 1.1rem;

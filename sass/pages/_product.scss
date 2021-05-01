@@ -1,0 +1,67 @@
+h5 {
+	color: $primaryColor;
+	font-size: 1.5rem;
+	font-weight: 650;
+}
+
+.mainContentProduct {
+}
+
+.productPageTop {
+	display: flex;
+	align-items: center;
+	min-width: 100%;
+	padding: 1.6rem;
+	justify-content: space-around;
+
+	&__arrow {
+		font-size: 2.5rem;
+		font-weight: 600;
+		color: gray;
+		margin-right: 15rem;
+	}
+
+	&__title {
+		text-align: center;
+		color: $primaryColor;
+		font-size: 1.7rem;
+	}
+}
+
+.containerBot {
+	display: flex;
+}
+
+.imgContainer {
+	padding: 3rem;
+
+	&__imgBox {
+		display: flex;
+		box-shadow: 0 0 16px #7473732e;
+		max-width: 22rem;
+		max-height: 19rem;
+		padding: 6rem;
+		justify-content: center;
+	}
+
+	&__productImg {
+		object-fit: contain;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.sideContent {
+	padding: 1rem;
+	font-size: 1.5rem;
+
+	&__textBox {
+		display: flex;
+		font-size: 2rem;
+		color: $primaryColor;
+	}
+
+	&__priceText {
+		margin: 0;
+	}
+}

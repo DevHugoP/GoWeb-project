@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+        <script src="https://kit.fontawesome.com/843bef5dbb.js" crossorigin="anonymous"></script>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="homepageContainer">
+			<header class="header">
+				<nav class="header__nav">
+					<div class="logoBox">
+						<logo class="logoBox__logo"></logo>
+						<h1 class="logoBox__siteName">Circle<br />Products</h1>
+					</div>
+					<div class="navList">
+							<h6 class="navList__title">Dashboard</h6>
+							<p class="navList__text"><span class="navList__dot"></span>Products management</p>
+							<p class="navList__text">Employees management</p>
+							<hr class="navList__line"></hr>
+              <h6 class="navList__title">Logout</h6>
+					</div>
+				</nav>
+			</header>
+			<section class="mainContentProduct" id='content'>
+                <div class="productPageTop">
+                    <div>
+                        <a href="#"><span class="fas fa-arrow-left productPageTop__arrow"></span></a>
+                    </div>
+                    <h2 class="productPageTop__title" id='productTitle'></h2>
+                </div>
+                <article class="containerBot">
+                    <div class="imgContainer" >
+                        <div id='productImg' class="imgContainer__imgBox"></div>
+                    </div>
+                    <div class="sideContent">
+                        <div class="sideContent__textBox">
+                            <h5>Description</h5>
+                            <h5>Category</h5>
+                        </div>
+                        <div>
+                            <h5 class="sideContent__priceText">Price</h5>
+                            <div>
+                                <input type="number">
+                                <p>Price</p>
+                            </div>
+                            <button>upload</button>
+                        </div>
+                    </div>
+                </article>
+
+
+			</section>
+		</div>
+	</body>
+    <script src="../javascript/product.js"></script>
+</html>
