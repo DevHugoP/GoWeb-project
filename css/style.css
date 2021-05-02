@@ -1,7 +1,6 @@
 .header {
   background-color: #564aff;
-  width: 20%;
-  height: 60rem;
+  width: 18%;
 }
 .header__nav {
   display: flex;
@@ -17,13 +16,14 @@
 .logoBox__logo {
   border: 0.5rem solid white;
   border-radius: 100px;
-  height: 2.1rem;
-  width: 2.1rem;
+  height: 2rem;
+  width: 2rem;
   margin-right: 15px;
 }
 .logoBox__siteName {
   color: white;
   font-weight: 450;
+  font-size: 1.2rem;
 }
 
 .navList {
@@ -31,7 +31,7 @@
 }
 .navList__title {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -39,6 +39,7 @@
   color: white;
   font-weight: 500;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
 .navList__line {
   border-top: 1px transparent white;
@@ -99,16 +100,21 @@ table th:last-child {
 
 h5 {
   color: #564aff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 650;
+  margin: 0;
+}
+
+.productPageContainer {
+  display: flex;
+  height: auto;
+  width: auto;
 }
 
 .productPageTop {
   display: flex;
   align-items: center;
-  min-width: 100%;
-  padding: 1.6rem;
-  justify-content: space-around;
+  margin: 2rem 0rem 0rem 2rem;
 }
 .productPageTop__arrow {
   font-size: 2.5rem;
@@ -116,7 +122,12 @@ h5 {
   color: gray;
   margin-right: 15rem;
 }
+.productPageTop__arrowLink {
+  width: 4rem;
+}
 .productPageTop__title {
+  flex: 2;
+  justify-self: flex-end;
   text-align: center;
   color: #564aff;
   font-size: 1.7rem;
@@ -124,16 +135,17 @@ h5 {
 
 .containerBot {
   display: flex;
+  align-items: flex-start;
 }
 
 .imgContainer {
-  padding: 3rem;
+  padding: 2rem;
 }
 .imgContainer__imgBox {
   display: flex;
-  box-shadow: 0 0 16px #7473732e;
-  max-width: 22rem;
-  max-height: 19rem;
+  box-shadow: 0 0 5px #9696962e;
+  max-width: 24rem;
+  max-height: 20rem;
   padding: 6rem;
   justify-content: center;
 }
@@ -144,23 +156,83 @@ h5 {
 }
 
 .sideContent {
-  padding: 1rem;
+  margin: 2rem 1rem 1rem 0rem;
   font-size: 1.5rem;
 }
-.sideContent__textBox {
+
+.textBox {
   display: flex;
-  font-size: 2rem;
-  color: #564aff;
 }
-.sideContent__priceText {
-  margin: 0;
+.textBox__description {
+  max-width: 360px;
+  height: auto;
+  margin: 0rem 3rem 1.9rem 0rem;
+}
+.textBox__description--text {
+  font-size: 13px;
+  line-height: 1.3rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.textBox__category--text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  border-radius: 1rem;
+}
+
+.priceModifier {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+.priceModifier__priceVat {
+  font-size: 0.8rem;
+  margin-left: 2rem;
+  color: #7e7c7c;
+}
+.priceModifier__linkedBox {
+  display: flex;
+  margin-right: 3rem;
+}
+.priceModifier__linkedBox--currency {
+  width: 1.1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 0px 0.2rem 0.2rem 0px;
+  border: solid #564aff 1px;
+  border-left: 0;
+  color: #7e7c7c;
+  margin-left: -0.5rem;
+  height: 10px;
+  padding: 9px 0 9px 0;
+}
+.priceModifier__linkedBox--input {
+  border: solid #564aff 1px;
+  border-right: none;
+  max-width: 90px;
+  height: 10px;
+  border-radius: 0.2rem 0 0 0.2rem;
+  padding: 9px;
+}
+.priceModifier__linkedBox--input:focus {
+  outline: 0;
+}
+.priceModifier__uploadBtn {
+  margin-top: 2rem;
+  background-color: #564aff;
+  padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+  color: white;
+  border: 0;
+  border-radius: 0.2rem;
 }
 
 html,
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

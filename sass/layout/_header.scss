@@ -1,7 +1,6 @@
 .header {
 	background-color: $primaryColor;
-	width: 20%;
-	height: 60rem; // à modif
+	width: 18%;
 
 	&__nav {
 		display: flex;
@@ -17,13 +16,14 @@
 	&__logo {
 		border: 0.5rem solid white;
 		border-radius: 100px;
-		height: 2.1rem;
-		width: 2.1rem;
+		height: 2rem;
+		width: 2rem;
 		margin-right: 15px;
 	}
 	&__siteName {
 		color: white;
 		font-weight: 450;
+		font-size: 1.2rem;
 	}
 }
 
@@ -32,7 +32,7 @@
 
 	&__title {
 		color: white;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		font-weight: 500;
 		margin-bottom: 2rem;
 	}
@@ -40,6 +40,7 @@
 		color: white;
 		font-weight: 500;
 		margin-top: 2rem;
+		font-size: 0.9rem;
 	}
 	&__line {
 		border-top: 1px transparent white;

@@ -1,7 +1,14 @@
 h5 {
 	color: $primaryColor;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 650;
+	margin: 0;
+}
+
+.productPageContainer {
+	display: flex;
+	height: auto;
+	width: auto;
 }
 
 .mainContentProduct {
@@ -10,9 +17,7 @@ h5 {
 .productPageTop {
 	display: flex;
 	align-items: center;
-	min-width: 100%;
-	padding: 1.6rem;
-	justify-content: space-around;
+	margin: 2rem 0rem 0rem 2rem;
 
 	&__arrow {
 		font-size: 2.5rem;
@@ -20,8 +25,13 @@ h5 {
 		color: gray;
 		margin-right: 15rem;
 	}
+	&__arrowLink {
+		width: 4rem;
+	}
 
 	&__title {
+		flex: 2;
+		justify-self: flex-end;
 		text-align: center;
 		color: $primaryColor;
 		font-size: 1.7rem;
@@ -30,16 +40,17 @@ h5 {
 
 .containerBot {
 	display: flex;
+	align-items: flex-start;
 }
 
 .imgContainer {
-	padding: 3rem;
+	padding: 2rem;
 
 	&__imgBox {
 		display: flex;
-		box-shadow: 0 0 16px #7473732e;
-		max-width: 22rem;
-		max-height: 19rem;
+		box-shadow: 0 0 5px #9696962e;
+		max-width: 24rem;
+		max-height: 20rem;
 		padding: 6rem;
 		justify-content: center;
 	}
@@ -52,16 +63,81 @@ h5 {
 }
 
 .sideContent {
-	padding: 1rem;
+	margin: 2rem 1rem 1rem 0rem;
 	font-size: 1.5rem;
+}
+.textBox {
+	display: flex;
+	&__description {
+		max-width: 360px;
+		height: auto;
+		margin: 0rem 3rem 1.9rem 0rem;
 
-	&__textBox {
-		display: flex;
-		font-size: 2rem;
-		color: $primaryColor;
+		&--text {
+			font-size: 13px;
+			line-height: 1.3rem;
+			font-weight: 300;
+			font-family: "Roboto", sans-serif;
+		}
+	}
+	&__category {
+		&--text {
+			text-align: center;
+			font-size: 0.8rem;
+			color: white;
+			padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+			border-radius: 1rem;
+		}
+	}
+}
+
+.priceModifier {
+	display: flex;
+	align-items: center;
+	margin-top: 1.2rem;
+
+	&__priceVat {
+		font-size: 0.8rem;
+		margin-left: 2rem;
+		color: rgb(126, 124, 124);
 	}
 
-	&__priceText {
-		margin: 0;
+	&__linkedBox {
+		display: flex;
+		margin-right: 3rem;
+
+		&--currency {
+			width: 1.1rem;
+			display: flex;
+			align-items: center;
+			font-size: 1rem;
+			border-radius: 0px 0.2rem 0.2rem 0px;
+			border: solid $primaryColor 1px;
+			border-left: 0;
+			color: rgb(126, 124, 124);
+			margin-left: -0.5rem;
+			height: 10px;
+			padding: 9px 0 9px 0;
+		}
+
+		&--input {
+			border: solid $primaryColor 1px;
+			border-right: none;
+			max-width: 90px;
+			height: 10px;
+			border-radius: 0.2rem 0 0 0.2rem;
+			padding: 9px;
+		}
+		&--input:focus {
+			outline: 0;
+		}
+	}
+	&__uploadBtn {
+		margin-top: 2rem;
+		background-color: $primaryColor;
+		padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+		color: white;
+		border: 0;
+		border-radius: 0.2rem;
 	}
 }

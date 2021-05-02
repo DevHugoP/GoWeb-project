@@ -14,7 +14,7 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="homepageContainer">
+		<div class="productPageContainer">
 			<header class="header">
 				<nav class="header__nav">
 					<div class="logoBox">
@@ -30,29 +30,38 @@
 					</div>
 				</nav>
 			</header>
-			<section class="mainContentProduct" id='content'>
+			<section class="mainContentProduct">
                 <div class="productPageTop">
-                    <div>
-                        <a href="#"><span class="fas fa-arrow-left productPageTop__arrow"></span></a>
-                    </div>
-                    <h2 class="productPageTop__title" id='productTitle'></h2>
+                        <a href="./home.html"class='productPageTop__arrowLink'><span class="fas fa-arrow-left productPageTop__arrow"></span></a>
+                    	<h2 class="productPageTop__title" id='productTitle'></h2>
                 </div>
                 <article class="containerBot">
                     <div class="imgContainer" >
                         <div id='productImg' class="imgContainer__imgBox"></div>
                     </div>
                     <div class="sideContent">
-                        <div class="sideContent__textBox">
-                            <h5>Description</h5>
-                            <h5>Category</h5>
+                        <div class="textBox">
+							<div id='description' class="textBox__description">
+								<h5 class="textBox__description--title">Description</h5>
+								<p id='descriptionText' class="textBox__description--text"></p>
+							</div>
+							<div id='textBox__category'>
+								<h5 class="textBox__category--title">Category</h5>
+								<p id='categoryText' class="textBox__category--text"></p>
+							</div>
                         </div>
-                        <div>
-                            <h5 class="sideContent__priceText">Price</h5>
-                            <div>
-                                <input type="number">
-                                <p>Price</p>
-                            </div>
-                            <button>upload</button>
+                        <div class="priceBox">
+                            <h5 class="priceTitle">Price</h5>
+							<div class="userInput">
+								<div class="priceModifier">
+									<div class="priceModifier__linkedBox">
+										<input type="number" id='priceInput' step="any" class="priceModifier__linkedBox--input">
+										<span class="priceModifier__linkedBox--currency">€</span>
+									</div>
+									<p class="priceModifier__priceVat"><strong>Price</strong> (including VAT): 354€ </p>
+								</div>
+								<button id='uploadBtn' class="priceModifier__uploadBtn">Update product</button>
+							</div>
                         </div>
                     </div>
                 </article>
