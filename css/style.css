@@ -1,6 +1,7 @@
 .header {
   background-color: #564aff;
-  width: 18%;
+  width: 18rem;
+  height: auto;
 }
 .header__nav {
   display: flex;
@@ -56,6 +57,55 @@
   margin-right: 15px;
 }
 
+@media screen and (max-width: 927px) {
+  .header {
+    width: 100%;
+  }
+
+  .header__nav {
+    margin: 0rem 3rem;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navList {
+    display: flex;
+    gap: 1.7rem;
+    margin: 0rem 3rem;
+  }
+  .navList__line {
+    display: none;
+  }
+  .navList__title {
+    margin: 0;
+  }
+  .navList__text {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 801px) {
+  .header__nav {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .navList {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .navList {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+  }
+}
 .homepageContainer {
   display: flex;
 }
@@ -106,9 +156,9 @@ h5 {
 }
 
 .productPageContainer {
+  width: 100%;
+  height: 100%;
   display: flex;
-  height: auto;
-  width: auto;
 }
 
 .productPageTop {
@@ -135,24 +185,22 @@ h5 {
 
 .containerBot {
   display: flex;
-  align-items: flex-start;
+  margin-top: 2rem;
 }
 
 .imgContainer {
-  padding: 2rem;
+  margin: 2rem;
 }
 .imgContainer__imgBox {
   display: flex;
   box-shadow: 0 0 5px #9696962e;
   max-width: 24rem;
   max-height: 20rem;
-  padding: 6rem;
-  justify-content: center;
+  padding: 5rem;
 }
 .imgContainer__productImg {
   object-fit: contain;
   max-width: 100%;
-  height: auto;
 }
 
 .sideContent {
@@ -175,6 +223,7 @@ h5 {
   font-family: "Roboto", sans-serif;
 }
 .textBox__category--text {
+  width: 85px;
   text-align: center;
   font-size: 0.8rem;
   color: white;
@@ -229,10 +278,57 @@ h5 {
   border-radius: 0.2rem;
 }
 
+@media screen and (max-width: 1240px) {
+  .textBox {
+    flex-direction: column-reverse;
+  }
+
+  .priceModifier {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .priceModifier__priceVat {
+    margin: 1rem 0rem 0 0;
+  }
+}
+@media screen and (max-width: 927px) {
+  .containerBot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sideContent {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 927px) {
+  .productPageContainer {
+    flex-direction: column;
+  }
+
+  .sideContent {
+    display: flex;
+  }
+}
+@media screen and (max-width: 680px) {
+  .sideContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productPageTop {
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+    gap: 2rem;
+  }
+}
 html,
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

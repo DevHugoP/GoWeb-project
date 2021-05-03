@@ -1,6 +1,7 @@
 .header {
 	background-color: $primaryColor;
-	width: 18%;
+	width: 18rem;
+	height: auto;
 
 	&__nav {
 		display: flex;
@@ -55,5 +56,58 @@
 		border-radius: 100%;
 		display: inline-block;
 		margin-right: 15px;
+	}
+}
+
+@media screen and (max-width: 927px) {
+	.header {
+		width: 100%;
+	}
+	.header__nav {
+		margin: 0rem 3rem;
+		flex-direction: row;
+		gap: 5rem;
+		align-items: center;
+		padding: 10px;
+	}
+
+	.navList {
+		display: flex;
+		gap: 1.7rem;
+		margin: 0rem 3rem;
+
+		&__line {
+			display: none;
+		}
+
+		&__title {
+			margin: 0;
+		}
+		&__text {
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 801px) {
+	.header__nav {
+		flex-direction: column;
+		gap: 0;
+		padding: 0;
+	}
+
+	.navList {
+		display: flex;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.navList {
+		margin-bottom: 1rem;
+		display: flex;
+		flex-direction: column;
+		line-height: 0;
 	}
 }
