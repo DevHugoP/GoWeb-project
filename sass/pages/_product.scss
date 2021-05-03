@@ -178,20 +178,21 @@ h5 {
 
 @media screen and (max-width: 680px) {
 	.sideContent {
-		display: flex;
-		flex-direction: column;
 	}
 
 	.productPageTop {
 		flex-direction: column;
 		margin: 2rem 0 0 0;
 		gap: 2rem;
-		&__arrow {
-		}
-		&__arrowLink {
-		}
 
 		&__title {
+			font-size: 1.3rem;
 		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.sideContent {
+		flex-direction: column;
 	}
 } ;

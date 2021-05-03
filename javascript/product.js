@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	function productData(product) {
 		localStorage.setItem("product", JSON.stringify(product));
-		let parsedProduct = JSON.parse(localStorage.getItem("product"));
-		console.log(parsedProduct);
 	}
 });
 
@@ -19,9 +17,10 @@ document.getElementById("productTitle").textContent = parsedProduct.title;
 //CREATION DE LA BALISE img
 //récupération de la balise avec son ID
 let productImg = document.getElementById("productImg");
-//création d'une balise img avec sa classe et attribut
+//création d'une balise img avec sa classe et son attribut
 let img = document.createElement("img");
 img.setAttribute("src", parsedProduct.image);
+img.setAttribute("alt", "image d'un produit du site voir description");
 img.classList.add("imgContainer__productImg");
 //injection de la balise avec le contenu dans le DOM
 productImg.append(img);

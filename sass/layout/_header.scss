@@ -1,7 +1,6 @@
 .header {
 	background-color: $primaryColor;
 	width: 18rem;
-	height: auto;
 
 	&__nav {
 		display: flex;
@@ -71,6 +70,11 @@
 		padding: 10px;
 	}
 
+	.navBtn {
+		align-items: center;
+		display: flex;
+	}
+
 	.navList {
 		display: flex;
 		gap: 1.7rem;
@@ -79,12 +83,15 @@
 		&__line {
 			display: none;
 		}
-
 		&__title {
 			margin: 0;
 		}
 		&__text {
 			margin: 0;
+		}
+		&__dot {
+			height: 0.4rem;
+			width: 0.4rem;
 		}
 	}
 }
@@ -100,14 +107,28 @@
 		display: flex;
 		margin-top: 1rem;
 		margin-bottom: 1rem;
+
+		&__text {
+			font-size: 0.8rem;
+		}
 	}
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 490px) {
+	.logoBox {
+		width: 100%;
+	}
+	.header__nav {
+		margin: 0;
+	}
 	.navList {
-		margin-bottom: 1rem;
+		margin: 0rem 4rem 1rem 1rem;
 		display: flex;
 		flex-direction: column;
-		line-height: 0;
+	}
+
+	.navBtn {
+		margin: 3rem 0rem 1rem 0;
+		align-items: flex-start;
 	}
 }
