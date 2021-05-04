@@ -1,5 +1,5 @@
-// on efface les données stockées dans le localstrorage lorsque l'url change
-window.onhashchange = localStorage.clear();
+// on efface les données stockées dans le localstrorage pour éviter de conserver des données stockées après visite d'une page produit
+localStorage.clear();
 
 // on récupère les données de l'API
 fetch("https://fakestoreapi.com/products?limit=7")
