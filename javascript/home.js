@@ -22,7 +22,10 @@ const homepageData = (fetchedData) => {
 
 		// Ajout des classes et inserer les data
 		productLine.className = "rowContainer";
-		productLine.setAttribute("data-href", "http://127.0.0.1:5500/product.html?id=" + data.id);
+		productLine.setAttribute(
+			"data-href",
+			"http://127.0.0.1:5500/pages/product.html?id=" + data.id
+		);
 		productName.textContent = data.title;
 		productCategory.textContent = data.category;
 
