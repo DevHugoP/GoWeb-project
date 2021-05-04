@@ -1,5 +1,7 @@
+// on efface les données stockées dans le localstrorage lorsque l'url change
 window.onhashchange = localStorage.clear();
 
+// on récupère les données de l'API
 fetch("https://fakestoreapi.com/products?limit=7")
 	.then((res) => res.json())
 	.then((fetchedData) => homepageData(fetchedData));
@@ -10,7 +12,7 @@ const homepageData = (fetchedData) => {
 
 		//recupération de la div qui contiendra le contenu
 		let tbody = document.getElementById("tbody");
-		//Création des éléments du DOM nécessaires
+		//Création des éléments du DOM nécessaires avec ajout des classes
 		let productLine = document.createElement("tr");
 		let productName = document.createElement("td");
 		productName.className = "productName";
@@ -20,7 +22,7 @@ const homepageData = (fetchedData) => {
 		let productPriceVat = document.createElement("td");
 		productPriceVat.className = "productPriceVat";
 
-		// Ajout des classes et inserer les data
+		// Ajout des classes et insertion des données
 		productLine.className = "rowContainer";
 		productLine.setAttribute(
 			"data-href",
@@ -29,13 +31,14 @@ const homepageData = (fetchedData) => {
 		productName.textContent = data.title;
 		productCategory.textContent = data.category;
 
-		// On ajoute une classe en fonction de la category
+		// On ajoute une classe en fonction de la catégorie
 		if (productCategory.textContent === "men's clothing") {
 			productCategory.className = "orangeTag";
 		} else {
 			productCategory.className = "greenTag";
 		}
 
+		// Calcul de la TVA et limitation du nombre de chiffre après la virgule à 2
 		productPrice.textContent = data.price + "€";
 		let modifiedPrice = data.price + (data.price / 100) * 20;
 		productPriceVat.textContent = modifiedPrice.toFixed(2) + "€";
@@ -46,8 +49,8 @@ const homepageData = (fetchedData) => {
 		tbody.append(productLine);
 	}
 
+	// On boucle dans les éléments du tableau tr pour leur permettre de devenir un lien clickable grâce au data-href inclus plus tôt
 	const rows = document.querySelectorAll("tr[data-href]");
-	console.log(rows);
 
 	rows.forEach((row) => {
 		row.addEventListener("click", () => {

@@ -174,9 +174,6 @@ h5 {
 }
 
 @media screen and (max-width: 680px) {
-	.sideContent {
-	}
-
 	.productPageTop {
 		flex-direction: column;
 		margin: 2rem 0 0 0;
@@ -191,5 +188,10 @@ h5 {
 @media screen and (max-width: 440px) {
 	.sideContent {
 		flex-direction: column;
+	}
+	.imgContainer {
+		&__imgBox {
+			padding: 2rem;
+		}
 	}
 } ;

@@ -1,6 +1,7 @@
+@charset "UTF-8";
 .header {
   background-color: #564aff;
-  width: 18rem !important;
+  width: 18rem;
 }
 .header__nav {
   display: flex;
@@ -132,13 +133,10 @@
 .homepageContainer {
   display: flex;
   height: 100%;
-  width: 100%;
-  justify-content: stretch;
 }
 
 .mainContent {
   width: 80%;
-  margin: 2rem 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -147,11 +145,12 @@
   color: #564aff;
   font-size: 2.1rem;
   font-weight: 550;
-  margin-bottom: 4rem;
-  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .table {
+  margin: 2rem;
   border-collapse: collapse;
 }
 .table__head {
@@ -165,18 +164,22 @@
   box-shadow: 0 3px 6px -6px #777;
 }
 .table th {
-  padding: 20px;
+  height: 2.7rem;
   font-size: 0.9rem;
 }
 .table .productPriceVat {
   text-align: right;
+  margin-right: 2rem;
 }
 .table .thPriceVat {
   border-radius: 0rem 0.2rem 0.2rem 0;
+  text-align: right;
+  padding-right: 1rem;
 }
 .table .thProductName {
   border-radius: 0.2rem 0rem 0rem 0.2rem;
   width: 35rem;
+  padding-left: 1rem;
 }
 .table .thCategory {
   width: 15rem;
@@ -186,9 +189,9 @@
 }
 .table td {
   color: #717070;
-  padding: 6px 10px 6px 8px;
   font-weight: 500;
   font-size: 0.85rem;
+  padding-top: 0.5rem;
 }
 .table .orangeTag {
   background-color: #ffa846;
@@ -212,6 +215,83 @@
 @media screen and (max-width: 928px) {
   .homepageContainer {
     flex-direction: column;
+  }
+
+  .mainContent {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 760px) {
+  /* on force le tableau en block */
+  table,
+thead,
+tbody,
+th,
+td,
+tr {
+    display: block;
+  }
+
+  .table {
+    border-collapse: separate;
+    text-align: center;
+    align-items: center;
+  }
+  .table .productPriceVat {
+    text-align: center;
+  }
+
+  /* on cache le header du tableau (mais on utilise pas display: none;, pour l'accessibilité) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  .ProductName {
+    padding-top: 5rem;
+  }
+
+  td {
+    padding-top: 1rem;
+    position: relative;
+    padding-left: 50%;
+    margin-bottom: 1rem;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+  nommer les données qu'on rajoute
+  */
+  td:nth-of-type(1):before {
+    content: "Product Name";
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  td:nth-of-type(2):before {
+    content: "Category";
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  td:nth-of-type(3):before {
+    content: "Price";
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  td:nth-of-type(4):before {
+    content: "Price including Vat";
+    padding: 1rem 1rem 1rem 1rem;
   }
 }
 h5 {
@@ -390,6 +470,10 @@ h5 {
 @media screen and (max-width: 440px) {
   .sideContent {
     flex-direction: column;
+  }
+
+  .imgContainer__imgBox {
+    padding: 2rem;
   }
 }
 html,

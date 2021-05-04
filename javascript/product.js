@@ -1,8 +1,9 @@
+// on efface les données stockées dans le localstrorage lorsque l'url change
 window.onhashchange = localStorage.clear();
 
 let urlProduct = window.location.href; // recupération de l'url contenant notre id de produit
-const splitUrl = urlProduct.split("=");
-idProduct = splitUrl[1];
+const splitUrl = urlProduct.split("="); // on coupe la chaine de caractères sur le motif =
+idProduct = splitUrl[1]; // on associe la deuxième partie de la chaine de caractère à l'idProduct
 
 // fonction permettant d'attendre le chargement du DOM
 document.addEventListener("DOMContentLoaded", () => {
@@ -51,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		// création d'une variable qui sera modifiée par l'utilisateur
 		let newPrice = parseFloat(document.getElementById("priceInput").value);
-		console.log(newPrice);
 
 		// On recalcule le prix avec la TVA à chaque input de l'utilisateur
 		document.getElementById("priceInput").addEventListener("keyup", () => {
