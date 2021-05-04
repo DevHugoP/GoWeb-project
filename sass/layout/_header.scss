@@ -1,6 +1,6 @@
 .header {
 	background-color: $primaryColor;
-	width: 18rem;
+	width: 18rem !important;
 
 	&__nav {
 		display: flex;
@@ -28,7 +28,7 @@
 }
 
 .navList {
-	margin-top: 4rem;
+	margin-top: 6rem;
 
 	&__title {
 		color: white;
@@ -49,8 +49,8 @@
 		margin-left: 0;
 	}
 	&__dot {
-		height: 0.6rem;
-		width: 0.6rem;
+		height: 0.5rem;
+		width: 0.5rem;
 		background-color: white;
 		border-radius: 100%;
 		display: inline-block;

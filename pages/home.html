@@ -21,12 +21,14 @@
 						<logo class="logoBox__logo"></logo>
 						<h1 class="logoBox__siteName">Circle<br />Products</h1>
 					</div>
-					<div class="navList">
+					<div class="navBtn">
+						<div class="navList">
 							<h6 class="navList__title">Dashboard</h6>
 							<p class="navList__text"><span class="navList__dot"></span>Products management</p>
 							<p class="navList__text">Employees management</p>
 							<hr class="navList__line"></hr>
-              <h6 class="navList__title">Logout</h6>
+						</div>
+						<h6 class="navList__title">Logout</h6>
 					</div>
 				</nav>
 			</header>
@@ -35,26 +37,15 @@
                 <table id='tableContainer' class="table">
                     <thead class="table__head">
                            <tr>
-                            <th>Product name</th>
-                            <th>Category</th> 
-                            <th>Price</th>
-                            <th>Price (including VAT) </th>
+                            <th class="thProductName">Product name</th>
+                            <th class="thCategory">Category</th> 
+                            <th class="thPrice">Price</th>
+                            <th class="thPriceVat"><strong>Price</strong> (including VAT) </th>
                           </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                          <td scope="row">1</td>
-                          <td>Mark</td>
-                          <td><a href="http://example.com">test</a></td>
-                          <td>markotto@email.com</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">2</td>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>jacobthornton@email.com</td>
-                        </tr>
-                      </tbody>
+                    <tbody id='tbody'>
+
+                    </tbody>
  
 
                 </table>
