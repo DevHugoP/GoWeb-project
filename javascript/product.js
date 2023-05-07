@@ -1,5 +1,4 @@
-// // on efface les données stockées dans le localstrorage lorsque l'url change pour éviter de conserver des données stockées après visite d'une page produit
-window.onhashchange = localStorage.clear();
+
 
 let urlProduct = window.location.href; // recupération de l'url contenant notre id de produit
 const splitUrl = urlProduct.split("="); // on coupe la chaine de caractères sur le motif =
